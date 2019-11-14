@@ -1,0 +1,3 @@
+.new-container{
+  height:calc(100vh - 65px - 25px);
+}

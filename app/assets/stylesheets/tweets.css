@@ -1,0 +1,33 @@
+.container-top {
+  height:calc(100vh - 65px - 25px );
+  overflow-y: auto;
+  background-color:white;
+  width:100%;
+}
+
+.content_post {
+  height:400px;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+}
+
+.more {
+  display:block;
+  background-color:black;
+}
+
+.more_list{
+  margin: 0;
+}
+.racket {
+  margin-bottom:20px;
+}
+
+.racketname{
+  color:white;
+}
+p{
+  margin:0;
+}
+

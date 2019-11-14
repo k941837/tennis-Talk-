@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <th>ラケット名</th>
+    <td><%= form.text_field :name, placeholder: "racket" %></td>
+  </tr>
+   <tr>
+    <th>メーカー名</th>
+    <td><%= form.text_field :name, placeholder: "maker" %></td>
+  </tr>
+  <tr>
+    <th>メーカー希望価格</th>
+    <td><%= form.text_field :name, placeholder: "price" %></td>
+  </tr>
+  <tr>
+    <th>プレースタイル</th>
+    <td><%= form.text_field :name, placeholder: "playstyle" %></td>
+  </tr>
+  <tr>
+    <th>特徴</th>
+    <td><%= form.text_area :text, placeholder: "text" , rows: "10" %></td>
+  </tr>
+  <tr>
+    <th>画像</th>
+    <td><%= form.text_field :image, placeholder: "image" %></td>
+  </tr>
+</table>
+<div class="send">
+ <%= form.submit "SEND" %>
+</div>

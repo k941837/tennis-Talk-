@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tennis Talk!</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker rel="stylesheet">    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Unica+One::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    
+    </script>
+  </head>
+
+  <body>
+  
+    <header class="header">
+      <div class="header__bar row">
+        <div class = "title">
+         <a class="title-name" href="/">tennis TALK!!</a>
+          <div class = "post-area">
+           <%= link_to  "投稿する", "/tweets/new", class: "post-area-font" %>
+          </div>
+          <% if user_signed_in? %>
+              <span class = "username"><%= current_user.nickname %>
+                <div class="user__info">
+                    <%= link_to "マイページ", "/users/#{current_user.id}", class: 'user-info-name' %>
+                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'user-info-name' %>
+                </div>
+              </span>
+              
+           <% else %>
+              <%= link_to "ログイン", new_user_session_path, class: 'user-info-name' %>
+              <%= link_to "新規登録", new_user_registration_path, class: 'user-info-name' %>
+          <% end %>
+        </div>
+      </div>
+    </header>
+
+    <%= yield %>
+
+    <footer>
+      <p>
+        Copyright tennis Talk! 2019.
+      </p>
+    </footer>
+  </body>
+</html>

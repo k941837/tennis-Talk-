@@ -1,0 +1,217 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+header {
+ background-color: white;
+ height: 65px; 
+ color:#304352;
+ position:relative;
+ 
+}
+.title{
+ font-size: 30px;
+ line-height:65px;
+ 
+}
+
+.title-name {
+  border: 5px solid #000000;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 20px;
+  padding: 0px 120px;
+  width:200px;
+  background-color: white;
+}
+a.title-name{
+  color:black;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+.user__info {
+  float:right;
+  font-size: 15px;
+  line-height:35px;
+}
+.username {
+  font-size:17px;
+  position:absolute;
+  right:20px;
+  width:320px;
+}
+
+
+a.post {
+  float: right;
+  font-size: 15px;
+  padding:0 10px;
+  display:block;
+}
+
+
+
+.search-form {
+  padding-top:20px;
+  margin:0 150px;
+}
+.search-input {
+  width: 80%;
+  height:30px;
+  padding-left:30px;
+  border-radius: 20px;
+}
+.post-area{
+  font-size:20px;
+  position:absolute;
+  top:0px;
+  left:500px;
+}
+
+
+
+footer {
+  background-color:white;
+  height:25px;
+  padding-left:10px;
+  color:white;
+}
+
+
+
+.post-area-font{
+  width: 160px;
+  color:#ffffff;
+  font-size: 15px;
+  line-height: 65px;
+  text-align: center;
+  text-decoration: none;
+  border:1px solid #7a5829;
+  -webkit-box-shadow:0px 0px 0px 1px #fff inset, 0px 10px 30px -10px rgba(0,0,0,0.2);
+  -moz-box-shadow:0px 0px 0px 1px #fff inset, 0px 10px 30px -10px rgba(0,0,0,0.2);
+  box-shadow:0px 0px 0px 1px #fff inset, 0px 10px 30px -10px rgba(0,0,0,0.2);
+  background: #ab864e;
+  background: -moz-linear-gradient(top, #ab864e 1%, #7a5829 100%);
+  background: -webkit-linear-gradient(top, #ab864e 1%,#7a5829 100%);
+  background: linear-gradient(to bottom, #ab864e 1%,#7a5829 100%);
+  display: block;
+  position:relative;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.post-area-font:before {
+  content: "";
+  width: 10px;
+  height: 5px;
+  margin:0 0 0 -5px;
+  border: 5px solid transparent;
+  border-top: 7px solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.post-area-font:hover {
+  opacity:.6;
+}
+
+
+
+
+.user-info-name{
+  float:right;
+  width: 130px;
+  color:#ffffff;
+  font-size: 13px;
+  line-height: 65px;
+  text-align: center;
+  text-decoration: none;
+  border:1px solid #7a5829;
+  -webkit-box-shadow:0px 0px 0px 1px #fff inset, 0px 10px 30px -10px rgba(0,0,0,0.2);
+  -moz-box-shadow:0px 0px 0px 1px #fff inset, 0px 10px 30px -10px rgba(0,0,0,0.2);
+  box-shadow:0px 0px 0px 1px #fff inset, 0px 10px 30px -10px rgba(0,0,0,0.2);
+  background: #ab864e;
+  background: -moz-linear-gradient(top, #ab864e 1%, #7a5829 100%);
+  background: -webkit-linear-gradient(top, #ab864e 1%,#7a5829 100%);
+  background: linear-gradient(to bottom, #ab864e 1%,#7a5829 100%);
+  display: block;
+  position:relative;
+  -webkit-transition: 0.5s ease-out;
+  -moz-transition: 0.5s ease-out;
+  -o-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+.user-info-name:before {
+  content: "";
+  width: 10px;
+  height: 5px;
+  margin:0 0 0 -5px;
+  border: 5px solid transparent;
+  border-top: 7px solid #fff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.user-info-name:hover {
+  opacity:.8;
+}
+
+
+.wrapper{
+  height:calc(100vh - 65px - 25px);
+  text-align: center;
+}
+
+.contents-wrapper{
+  margin-top:140px;
+}
+
+#user_nickname{
+  width:160px;
+  height:15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#user_email{
+  width:160px;
+  height:15px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+#user_password{
+  width:160px;
+  height:15px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+#user_password_confirmation{
+  width:160px;
+  height:15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+

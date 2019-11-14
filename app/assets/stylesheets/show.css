@@ -1,0 +1,52 @@
+.contents.row{
+  margin-top:30px;
+  overflow:scroll;
+}
+#comment_text{
+  width:400px;
+  border-radius: 10px;
+  padding:10px;
+}
+
+.content_post{
+  float:left;
+  width:50%;
+  height: calc(100vh - 65px - 25px)
+}
+
+
+
+.rackets{
+  height:500px;
+}
+
+.racket {
+  height: 50px;;
+  display:flex;
+  width:50%;
+  display:inline-block;
+}
+
+.rackets{
+  width:50%;
+}
+
+.racket-text{
+  height:400px;
+
+}
+.comments {
+  float:right;
+}
+
+.picture-content {
+  display: flex;
+}
+.content_post_picture_image{
+  height: 100%;
+  width: 100%;
+}
+
+.more_list{
+  padding-top:15px;
+}

@@ -1,0 +1,64 @@
+<div class ="contents row">
+  <div class= "picture-content">
+    <div class="content_post_picture">
+      <img src=<%= "#{@tweet.image}" %> class="content_post_picture_image"> 
+      <% if user_signed_in? && current_user.id == @tweet.user_id %>
+        <div class="more_list">
+            <%= link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get %>
+            <%= link_to '削除', "/tweets/#{@tweet.id}", method: :delete %>
+        </div>
+      <% end %>
+    </div>
+    <div class = "rackets">
+      <div class = "racket">
+        <%= simple_format(@tweet.racket) %>
+      </div>
+      <div class = "racket">
+      メーカー名
+      <%= simple_format(@tweet.maker) %>
+      </div>
+      <div class = "racket">
+      メーカー希望価格
+      <%= simple_format(@tweet.price) %>
+      </div>
+      <div class = "racket">
+      おすすめプレースタイル
+      <%= simple_format(@tweet.playstyle) %>
+      </div>
+      <div class = "racket-text">
+      特徴
+      <%= simple_format(@tweet.text) %>
+      </div>
+    </div> 
+  <div class="comments">
+  <h4>＜コメント一覧＞</h4>
+  <% if @comments %>
+    <% @comments.each do |comment| %>
+      <p>
+        <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+        <%= comment.text %>
+      </p>
+    <% end %>
+  <% end %>
+  </div>
+
+  </div>  
+    <span class="name">
+      <a href="/users/<%= @tweet.user.id %>">
+        <span>投稿者</span><%= @tweet.user.nickname %>
+      </a>
+    </span>
+  </div>
+  <div class="container">
+    <% if current_user %>
+      <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+  </div>
+
+</div>
+</div>    
