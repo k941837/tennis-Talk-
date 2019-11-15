@@ -67,5 +67,8 @@ gem 'ratyrate'
 gem 'jquery-rails'
 gem 'devise'
 gem 'kaminari'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+
 
