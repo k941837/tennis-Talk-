@@ -50,3 +50,25 @@
 .more_list{
   padding-top:15px;
 }
+
+.fab.fa-amazon{
+  transition: color 0.3s;
+  width:107px;
+  height:40px;
+  position:absolute;
+  left:40%;
+  top:15%;
+  background-color: black;
+  color:gray;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.fab.fa-amazon:hover{
+  color : #ff7043;
+}
+
+.fa-amazon:before{
+  color:white;
+  margin:5px;
+}

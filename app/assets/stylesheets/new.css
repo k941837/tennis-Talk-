@@ -1,3 +1,35 @@
 .new-container{
   height:calc(100vh - 65px - 25px);
 }
+
+#tweet_racket{
+  width:70%;
+  border-radius: 10px;
+  text-align: center;
+}
+#tweet_maker{
+  width:70%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#tweet_price{
+  width:70%;
+  border-radius: 10px;
+  text-align: center;
+}
+#tweet_playstyle{
+  width:70%;
+  border-radius: 10px;
+  text-align: center;
+}
+#tweet_text{
+  border-radius: 10px;
+  text-align: center;
+  width:70%;
+}
+#tweet_image{
+  width:70%;
+  border-radius: 10px;
+  text-align: center;
+}
