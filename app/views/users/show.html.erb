@@ -3,6 +3,10 @@
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
       <%= simple_format(tweet.text) %>
+      <div class="more_list">
+        <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+        <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+    </div>
     </div>
   <% end %>
   <%= paginate(@tweets) %>
