@@ -5,7 +5,7 @@ $(function() {
   function appendTweet(tweet) {
     
 
-    var html = `<div class="content_post" style="background-image: url(https://tennis-racket.jp/imgs/racket/4589.jpg);">
+    var html = `<div class="content_post" style="background-image: url('${tweet.image}');">
                   <div class="more">
                     <div class="detail">
                       <li>
